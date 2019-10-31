@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dajun Gu</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="styles.js"></script>
+    <script src="https://kit.fontawesome.com/11d06f2f9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="first-bg-1" id="#home">
+    <div id="icon" class="icon-button">
+        <a href="index.html">
+            <img class="icon" src="style/icon.png">
+        </a>
+    </div>
+
+    <nav class="navbar">
+        <ul class="main-nav">
+            <li>
+                <a href="index.html">Home</a>
+                <ul class="sub-nav">
+                    <li>
+                        <a href="home-bio">Biography</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="resume.pdf">Resume</a>
+            </li>
+            <li>
+                <a href="projects/index.html">Projects</a>
+                <ul class="sub-nav">
+                    <li>
+                        <a href="projects/xv6-modification">XV6 Modification</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="side-bar-area">
+        <div id="home-bg-icon-id" class="side-bar">
+            <i id="home-bg-icon-1" class="far fa-circle"></i>
+            <i id="home-bg-icon-2" class="far fa-circle"></i>
+            <i id="home-bg-icon-3" class="far fa-circle"></i>
+            <i id="home-bg-icon-4" class="far fa-circle"></i>
+        </div>
+    </div>
+
+</div>
+
+<section class="home-bio" id="#home-bio">
+    <div class="bio-container">
+        <div class="pa">I am a computer science student in PSU CS department. I come from Taiyuan, Shanxi, China. In my study field, I am interest in AI and it's relationship between human. I like swimming, hiking, and playing music game.</div>
+    </div>
+
+    <div class="bio-picture">
+
+    </div>
+</section>
+
+<section id="#projects">
+</section>
+
+<section id="#hiking">
+</section>
+
+<footer>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+</footer>
+
+<script>
+    document.getElementById('home-bg-icon-id').addEventListener('mouseover', function (e) {
+        let t = e.target;
+
+        if (t.tagName.toLowerCase() === 'i') {
+            t.className = 'fas fa-circle';
+            let home = document.getElementById('#home');
+            if (t.id.toLowerCase() === 'home-bg-icon-1')
+                home.className = 'first-bg-1';
+            else if (t.id.toLowerCase() === 'home-bg-icon-2')
+                home.className = 'first-bg-2';
+            else if (t.id.toLowerCase() === 'home-bg-icon-3')
+                home.className = 'first-bg-3';
+            else if (t.id.toLowerCase() === 'home-bg-icon-4')
+                home.className = 'first-bg-4';
+            else
+                alert('home-bg-icon-? ID is wrong.');
+        }
+    });
+
+    document.getElementById('home-bg-icon-id').addEventListener('mouseout', function (e) {
+        let t = e.target;
+        if (t.tagName.toLowerCase() === 'i') {
+            t.className = 'far fa-circle';
+        }
+    })
+</script>
+
+</body>
+
+</html>
