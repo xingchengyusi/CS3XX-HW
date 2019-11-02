@@ -72,7 +72,7 @@ a {
 }
 
 .footer-text {
-    margin: 2vh 2vw 2vh 2vw;
+    margin: 1vh 2vw 1vh 2vw;
     color: white;
     font-size: 2vmin;
 }
@@ -109,8 +109,22 @@ a {
     font-size: 5vmin;
     font-family: 'Crimson Text', serif;
     text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.pro-tag {
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+}
+
+.pro-tag-text {
+    font-size: 2vh;
+    margin: 0 1vmin 0 1vmin;
 }
 
 .pro-pic-intro {

@@ -19,7 +19,7 @@
 <body>
 
 <nav id="navbar" class="navbar">
-    <div id="main-nav" class="main-nav">
+    <div id="main-nav" class="main-nav" data-aos="fade-down">
         <div>
             <a href="index.html">
                 <i class="fas fa-mountain"></i>
@@ -33,18 +33,13 @@
         </div>
         <div class="li">
             <a href="projects/index.html">Projects</a>
-<!--            <div class="sub-nav" style="display: none">-->
-<!--                <div class="li">-->
-<!--                    <a href="projects/xv6-modification">XV6 Modification</a>-->
-<!--                </div>-->
-<!--            </div>-->
         </div>
     </div>
 </nav>
 
-<img id="first-bg" class="first-bg" src="./style/spring-1.jpg">
+<img id="first-bg" class="first-bg" src="./style/Autumn-3.jpg">
 
-<div class="side-bar-area">
+<div class="side-bar-area" data-aos="fade-left">
     <div id="home-bg-icon-id" class="side-bar">
         <i id="home-bg-icon-1" class="far fa-circle"></i>
         <i id="home-bg-icon-2" class="far fa-circle"></i>
@@ -53,9 +48,10 @@
     </div>
 </div>
 
-<div class="first-text-container">
+<div class="first-text-container" data-aos="fade-right">
     <p class="first-text">I am a slow walker</p>
     <p class="first-text">but I never walk backwards.</p>
+    <p class="first-text">--Abraham Lincoln</p>
 </div>
 
 <section class="home-bio" id="#home-bio">
@@ -80,6 +76,7 @@
 <footer class="footer-container">
     <div class="footer-text">© 2019 Dajun Gu.</div>
     <div class="footer-text">All rights reserved.</div>
+    <a class="footer-text" href="https://github.com/xingchengyusi">GitHub</a>
 </footer>
 
 <div class="top-button" id="top-button" data-aos="zoom-in">
@@ -100,13 +97,13 @@
             t.className = 'fas fa-circle';
             let home = document.getElementById('first-bg');
             if (t.id.toLowerCase() === 'home-bg-icon-1')
-                home.src = "./style/spring-1.jpg";
-            else if (t.id.toLowerCase() === 'home-bg-icon-2')
-                home.src = "./style/summer-1.jpg";
-            else if (t.id.toLowerCase() === 'home-bg-icon-3')
                 home.src = "./style/Autumn-3.jpg";
-            else if (t.id.toLowerCase() === 'home-bg-icon-4')
+            else if (t.id.toLowerCase() === 'home-bg-icon-2')
                 home.src = "style/winter-4.jpg";
+            else if (t.id.toLowerCase() === 'home-bg-icon-3')
+                home.src = "./style/spring-1.jpg";
+            else if (t.id.toLowerCase() === 'home-bg-icon-4')
+                home.src = "./style/summer-1.jpg";
             else
                 alert('home-bg-icon-? ID is wrong.');
         }

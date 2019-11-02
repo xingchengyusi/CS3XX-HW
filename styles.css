@@ -1,11 +1,5 @@
-/*.transparent {*/
-/*    border-width: 0px;*/
-/*    -webkit-box-shadow: 0px 0px;*/
-/*    box-shadow: 0px 0px;*/
-/*}*/
-
 body {
-    margin: 0;
+    margin: 0 0 0 0;
     text-align: center;
 }
 
@@ -28,8 +22,8 @@ navbar
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     top: 0;
-    margin: 0 0 0 0;
     width: 100vw;
+    height: 40vh;
 }
 
 /*
@@ -42,31 +36,35 @@ icon
 /*}*/
 
 .main-nav {
-    height: 5vh;
+    height: 7vh;
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
     flex-wrap: wrap;
-    margin: 2rem 3rem 2rem 3rem;
-    padding: 0 0;
+    padding: 4vmin 5vmin;
     font-family: 'Open Sans', sans-serif;
 }
 
 .fa-mountain {
     color: black;
     font-size: 1.8rem;
+    padding: 4vmin 5vmin;
 }
 
-.li a {
+.li {
+    padding: 4vmin 5vmin;
+}
+
+a {
     text-align: center;
-    margin: 1rem 4rem 1rem 4rem;
+    /*margin: 1rem 4rem 1rem 4rem;*/
+    margin-top: 3vmin;
     padding: 0 0;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 3vmin;
 }
 
 /*
@@ -77,9 +75,7 @@ side bar
     position: absolute;
     top: 25vh;
     right: 3vw;
-    direction: rtl;
-    margin-top: 5rem;
-    /*margin-right: 1.5rem;*/
+    margin-top: 10vh;
 }
 
 .side-bar {
@@ -89,24 +85,23 @@ side bar
 }
 
 .fa-circle {
-    width: 1.8rem;
-    margin: 1rem 1rem;
-    font-size: 1.8rem;
+    width: 3.6vw;
+    margin: 2vmin 2vmin;
+    font-size: 3.6vmin;
     color: yellow;
 }
 
 .first-text-container {
     position: absolute;
     top: 55vh;
-    left: 15vw;
+    left: 10vw;
     text-align: left;
-    margin: 0 0 0 0;
 }
 
 .first-text {
     margin: 0 0 0.5rem 0;
     font-family: 'Staatliches', cursive;
-    font-size: 3rem;
+    font-size: 6vmin;
     color: yellow;
 }
 
@@ -157,19 +152,20 @@ second part, biography
 
 .fa-arrow-up {
     color: blue;
-    font-size: 1.8rem;
+    font-size: 3.6vmin;
 }
 
 .top-button {
     position: fixed;
-    right: 1.8rem;
-    bottom: 1.8rem;
+    right: 3.6vmin;
+    bottom: 3.6vmin;
     border: none;
     background: none;
     cursor: pointer;
 }
 
 .footer-container {
+    text-align: center;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -179,7 +175,7 @@ second part, biography
 }
 
 .footer-text {
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1vh 2vw 1vh 2vw;
     color: white;
-    font-size: 1rem;
+    font-size: 2vmin;
 }
