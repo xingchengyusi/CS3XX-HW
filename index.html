@@ -4,60 +4,70 @@
     <meta charset="UTF-8">
     <title>Dajun Gu</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="styles.js"></script>
+    <script type="text/javascript" src="styles.js"></script>
+<!--    font and icon-->
     <script src="https://kit.fontawesome.com/11d06f2f9f.js" crossorigin="anonymous"></script>
+<!--    aos animate-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!--    viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum=scale=1.0">
+<!--    google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="first-bg-1" id="#home">
-    <div id="icon" class="icon-button">
-        <a href="index.html">
-            <img class="icon" src="style/icon.png">
-        </a>
-    </div>
 
-    <nav class="navbar">
-        <ul class="main-nav">
-            <li>
-                <a href="index.html">Home</a>
-                <ul class="sub-nav">
-                    <li>
-                        <a href="home-bio">Biography</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="resume.pdf">Resume</a>
-            </li>
-            <li>
-                <a href="projects/index.html">Projects</a>
-                <ul class="sub-nav">
-                    <li>
-                        <a href="projects/xv6-modification">XV6 Modification</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="side-bar-area">
-        <div id="home-bg-icon-id" class="side-bar">
-            <i id="home-bg-icon-1" class="far fa-circle"></i>
-            <i id="home-bg-icon-2" class="far fa-circle"></i>
-            <i id="home-bg-icon-3" class="far fa-circle"></i>
-            <i id="home-bg-icon-4" class="far fa-circle"></i>
+<nav id="navbar" class="navbar">
+    <div id="main-nav" class="main-nav">
+        <div>
+            <a href="index.html">
+                <i class="fas fa-mountain"></i>
+            </a>
+        </div>
+        <div class="li">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="li">
+            <a href="resume.pdf">Resume</a>
+        </div>
+        <div class="li">
+            <a href="projects/index.html">Projects</a>
+<!--            <div class="sub-nav" style="display: none">-->
+<!--                <div class="li">-->
+<!--                    <a href="projects/xv6-modification">XV6 Modification</a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
+</nav>
 
+<img id="first-bg" class="first-bg" src="./style/spring-1.jpg">
+
+<div class="side-bar-area">
+    <div id="home-bg-icon-id" class="side-bar">
+        <i id="home-bg-icon-1" class="far fa-circle"></i>
+        <i id="home-bg-icon-2" class="far fa-circle"></i>
+        <i id="home-bg-icon-3" class="far fa-circle"></i>
+        <i id="home-bg-icon-4" class="far fa-circle"></i>
+    </div>
+</div>
+
+<div class="first-text-container">
+    <p class="first-text">I am a slow walker</p>
+    <p class="first-text">but I never walk backwards.</p>
 </div>
 
 <section class="home-bio" id="#home-bio">
-    <div class="bio-container">
-        <div class="pa">I am a computer science student in PSU CS department. I come from Taiyuan, Shanxi, China. In my study field, I am interest in AI and it's relationship between human. I like swimming, hiking, and playing music game.</div>
+    <div class="bio-container" data-aos="fade-down-right">
+        <h1>Dajun Gu</h1>
+        <p>CS student at PSU</p>
+        <p>Swimming, Cooking, Hiking, and more...</p>
+        <!--        <div class="pa">I am a computer science student in PSU CS department. I come from Taiyuan, Shanxi, China. In my study field, I am interest in AI and it's relationship between human. I like swimming, hiking, and playing music game.</div>-->
     </div>
 
-    <div class="bio-picture">
-
+    <div class="bio-picture" data-aos="fade-up-left">
+        <img class="bio-mypic" src="style/myp-2.jpg">
     </div>
 </section>
 
@@ -67,25 +77,36 @@
 <section id="#hiking">
 </section>
 
-<footer>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+<footer class="footer-container">
+    <div class="footer-text">© 2019 Dajun Gu.</div>
+    <div class="footer-text">All rights reserved.</div>
 </footer>
 
+<div class="top-button" id="top-button" data-aos="zoom-in">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
 <script>
+    // initial aos animate
+    AOS.init({
+        duration: 1200,
+    });
+
+    // picture change
     document.getElementById('home-bg-icon-id').addEventListener('mouseover', function (e) {
         let t = e.target;
 
         if (t.tagName.toLowerCase() === 'i') {
             t.className = 'fas fa-circle';
-            let home = document.getElementById('#home');
+            let home = document.getElementById('first-bg');
             if (t.id.toLowerCase() === 'home-bg-icon-1')
-                home.className = 'first-bg-1';
+                home.src = "./style/spring-1.jpg";
             else if (t.id.toLowerCase() === 'home-bg-icon-2')
-                home.className = 'first-bg-2';
+                home.src = "./style/summer-1.jpg";
             else if (t.id.toLowerCase() === 'home-bg-icon-3')
-                home.className = 'first-bg-3';
+                home.src = "./style/Autumn-3.jpg";
             else if (t.id.toLowerCase() === 'home-bg-icon-4')
-                home.className = 'first-bg-4';
+                home.src = "style/winter-4.jpg";
             else
                 alert('home-bg-icon-? ID is wrong.');
         }
@@ -96,7 +117,20 @@
         if (t.tagName.toLowerCase() === 'i') {
             t.className = 'far fa-circle';
         }
-    })
+    });
+
+    // go to top button display
+    window.addEventListener('scroll', function () {
+        let top = document.getElementById('side-bar').getBoundingClientRect().top;
+        if (top <= -60)
+            getclass('top-button').display = '';
+    });
+
+    // go to top
+    document.getElementById('top-button').addEventListener('click', function (e) {
+       let t = e.target;
+       document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
 </script>
 
 </body>

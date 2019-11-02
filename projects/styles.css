@@ -1,0 +1,151 @@
+body {
+    margin: 0 0 0 0;
+}
+
+.navbar {
+    height: 40vh;
+    width: 100vw;
+    background: url("../style/spring-4.jpg") top fixed no-repeat;
+    overflow: visible;
+    background-size: cover;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+    height: 7vh;
+    text-align: center;
+    padding: 4vmin 5vmin;
+    overflow: visible;
+}
+
+.fa-mountain {
+    font-size: 3.6vmin;
+    color: black;
+    padding: 4vmin 5vmin;
+}
+
+.li {
+    padding: 4vmin 5vmin;
+}
+
+a {
+    color: black;
+    font-size: 3vmin;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.nav-title {
+    margin-top: 3vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 8vmin;
+    font-family: 'Staatliches', cursive;
+}
+
+.fa-arrow-up {
+    color: blue;
+    font-size: 3.6vmin;
+}
+
+.top-button {
+    position: fixed;
+    right: 3.6vmin;
+    bottom: 3.6vmin;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.footer-container {
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+}
+
+.footer-text {
+    margin: 2vh 2vw 2vh 2vw;
+    color: white;
+    font-size: 2vmin;
+}
+
+.projects-container {
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.project {
+    margin: 10vh 10vw;
+    padding: 0 0;
+    height: 70vh;
+    box-shadow: 0 0 0.6vh 0.6vh black;
+    border: black;
+    background: rgba(255, 255, 255, 0.5);
+    /* for hover transition and all browser */
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.project:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 2vmin 2vmin gray;
+}
+
+.pro-title {
+    font-size: 5vmin;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.pro-pic-intro {
+    margin: 3vh 2vw 3vh 2vw;
+    width: 56vw;
+    height: 49vh;
+    border: black;
+    box-shadow: 0 0 0.5vmin 0.5vmin black;
+    /* for hover transition and all browser */
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.pro-brief-intro {
+    width: 44vw;
+    height: 31vh;
+    padding: 9vh 6vw;
+    background: rgba(150, 150, 150, 0.7);
+    font-size: 2.5vmin;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: none;
+    /* for hover transition and all browser */
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.pro-pic-intro:hover {
+    box-shadow: 0 0 1.5vmin 1.5vmin gray;
+}
+
+.pro-pic-intro:hover .pro-brief-intro {
+    display: block;
+}

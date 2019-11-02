@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dajun Gu</title>
+    <link rel="stylesheet" href="styles.css">
+<!--    <link rel="stylesheet" href="test.css">-->
+<!--    <script type="text/javascript" src="../styles.js"></script>-->
+    <!--    font and icon-->
+    <script src="https://kit.fontawesome.com/11d06f2f9f.js" crossorigin="anonymous"></script>
+    <!--    aos animate-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--    viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1.0,maximum=scale=1.0">
+    <!--    google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Staatliches|Crimson+Text&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav id="navbar" class="navbar">
+    <div id="main-nav" class="main-nav" data-aos="fade-down">
+        <div>
+            <a href="../index.html">
+                <i class="fas fa-mountain"></i>
+            </a>
+        </div>
+        <div class="li">
+            <a href="../index.html">Home</a>
+        </div>
+        <div class="li">
+            <a href="../resume.pdf">Resume</a>
+        </div>
+        <div class="li">
+            <a href="index.html">Projects</a>
+        </div>
+    </div>
+
+    <div class="nav-title" data-aos="zoom-in">Previsou Projects</div>
+</nav>
+
+<div class="projects-container">
+    <div class="project">
+        <div class="pro-title">XV6 Modification</div>
+        <div class="pro-pic-intro" style="background: url('../style/spring-3.jpg') center no-repeat">
+            <div class="pro-brief-intro" data-aos="zoom-in-left">This is a xv6 modification project.</div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-container">
+    <div class="footer-text">© 2019 Dajun Gu.</div>
+    <div class="footer-text">All rights reserved.</div>
+</footer>
+
+<div class="top-button" id="top-button" data-aos="zoom-in">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+    // initial aos animate
+    AOS.init({
+        duration: 500,
+    });
+
+    document.getElementById('top-button').addEventListener('click', function (e) {
+        let t = e.target;
+        // safari not support this smooth method.
+        document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
+</script>
+
+</body>
+</html>
