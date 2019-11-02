@@ -115,13 +115,6 @@
         }
     });
 
-    // go to top button display
-    window.addEventListener('scroll', function () {
-        let top = document.getElementById('side-bar').getBoundingClientRect().top;
-        if (top <= -60)
-            getclass('top-button').display = '';
-    });
-
     // go to top
     document.getElementById('top-button').addEventListener('click', function (e) {
        let t = e.target;
