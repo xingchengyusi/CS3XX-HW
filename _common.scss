@@ -1,0 +1,78 @@
+body {
+  margin: 0 0 0 0;
+}
+
+.navbar {
+  height: 40vh;
+  width: 100vw;
+  background: url("../style/spring-3.jpg") top fixed no-repeat;
+  overflow: visible;
+  background-size: cover;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
+  height: 7vh;
+  text-align: center;
+  padding: 4vmin 5vmin;
+  overflow: visible;
+}
+
+.fa-mountain {
+  font-size: 3.6vmin;
+  color: black;
+  padding: 4vmin 5vmin;
+}
+
+.li {
+  padding: 4vmin 5vmin;
+}
+
+a {
+  color: black;
+  font-size: 3vmin;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.nav-title {
+  margin-top: 3vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 8vmin;
+  font-family: 'Staatliches', cursive;
+}
+
+.fa-arrow-up {
+  color: blue;
+  font-size: 3.6vmin;
+}
+
+.top-button {
+  position: fixed;
+  right: 3.6vmin;
+  bottom: 3.6vmin;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.footer-container {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 20vh;
+}
+
+.footer-text {
+  margin: 1vh 2vw 1vh 2vw;
+  color: white;
+  font-size: 2vmin;
+}
