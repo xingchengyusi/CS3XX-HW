@@ -39,7 +39,7 @@
     </div>
 </nav>
 
-<img id="first-bg" class="first-bg" src="./style/Autumn-3.jpg">
+<img id="first-bg" class="first-bg" src="./style/spring.jpg">
 
 <div class="side-bar-area" data-aos="fade-left">
     <div id="home-bg-icon-id" class="side-bar">
@@ -95,17 +95,18 @@
     document.getElementById('home-bg-icon-id').addEventListener('mouseover', function (e) {
         let t = e.target;
 
+        // in the year sequence
         if (t.tagName.toLowerCase() === 'i') {
             t.className = 'fas fa-circle';
             let home = document.getElementById('first-bg');
             if (t.id.toLowerCase() === 'home-bg-icon-1')
-                home.src = "./style/winter-4.jpg";
+                home.src = "./style/spring.jpg";
             else if (t.id.toLowerCase() === 'home-bg-icon-2')
-                home.src = "style/spring-1.jpg";
+                home.src = "style/summer.jpg";
             else if (t.id.toLowerCase() === 'home-bg-icon-3')
-                home.src = "./style/summer-1.jpg";
+                home.src = "./style/autumn.jpg";
             else if (t.id.toLowerCase() === 'home-bg-icon-4')
-                home.src = "./style/Autumn-3.jpg";
+                home.src = "./style/winter.jpg";
             else
                 alert('home-bg-icon-? ID is wrong.');
         }
